@@ -2,7 +2,9 @@
 
 Field tracker for Nov 3, 2026. Six tabs: Overview, Crossover Watch, County Results, Turnout Checks, Chase, Incidents.
 
-This GitHub Pages copy is for volunteers without a Claude account. Entries go to a Google Sheet through a small Apps Script, gated by a team passcode. Staff with Claude accounts can use the Claude-hosted copy, which has its own live shared database. The two copies do not share data, so pick one per role (for example, Claude copy for the returns desk, this site for poll checkers and chase teams). Every tab has a Copy CSV button for moving data between them.
+Everyone enters data here. Entries are stored in a Google Sheet ("Lahn Election Day Tracker (data)") through a small Apps Script web app, gated by a team passcode, and every open copy of the site refreshes from it every 20 seconds.
+
+Claude feeds the same Sheet: updated SOS absentee numbers by county and a short written read (daily, from the no-poll projection task), and official county results on election night. A read-only mirror on Claude is refreshed from the Sheet daily and hourly on Nov 3–4 (`sync/tracker.py pull`).
 
 ## Setup
 
